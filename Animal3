@@ -1,0 +1,21 @@
+package animal;
+
+abstract class Animal {
+    abstract void Sound();
+}
+
+class Cat extends Animal {
+    void Sound() {
+        System.out.println("cat sound");
+    }
+}
+
+/**
+ * @author Lenovo
+ */
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Cat(); // instantiate a Cat object
+        a.Sound(); // call the overridden method
+    }
+}
